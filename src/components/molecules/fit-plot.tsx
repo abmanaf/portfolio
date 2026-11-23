@@ -33,7 +33,6 @@ function buildData() {
     });
   }
 
-  // Ordinary least squares
   const n = points.length;
   const mx = points.reduce((s, p) => s + p.x, 0) / n;
   const my = points.reduce((s, p) => s + p.y, 0) / n;
@@ -67,14 +66,12 @@ export function FitPlot({ className }: { className?: string }) {
         aria-label="Scatter plot of noisy data points with a straight line fitted through them, trending upward."
         className="h-auto w-full"
       >
-        {/* axes */}
         <path
           d={`M${PAD} ${PAD / 2} V${HEIGHT - PAD} H${WIDTH - PAD / 2}`}
           fill="none"
           stroke="var(--border)"
           strokeWidth="1.5"
         />
-        {/* grid */}
         {[1, 2, 3].map((i) => (
           <line
             key={i}
@@ -115,7 +112,7 @@ export function FitPlot({ className }: { className?: string }) {
         />
       </svg>
       <figcaption className="mt-3 font-mono text-xs text-muted-foreground">
-        y = signal + noise
+        {/* y = signal + noise */}
       </figcaption>
     </figure>
   );

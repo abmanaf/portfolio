@@ -16,7 +16,7 @@ export function SectionIntro({
   className,
 }: SectionIntroProps) {
   return (
-    <div className={cn("flex flex-col gap-4 lg:sticky lg:top-24", className)}>
+    <div className={cn("flex flex-col gap-4 lg:top-24", className)}>
       <Heading id={id} level="section">
         {title}
       </Heading>

@@ -169,7 +169,7 @@ export const expertise = [
   {
     title: "Backend & Data Infrastructure",
     items:
-      "FastAPI, PostgreSQL, Supabase, Prisma, REST APIs, Git and GitHub, storyblok",
+      "FastAPI, PostgreSQL, Supabase, Prisma, REST APIs, Git and GitHub, storyblok, Neon, clerk,",
   },
 ];
 

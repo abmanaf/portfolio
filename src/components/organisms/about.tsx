@@ -9,7 +9,6 @@ export function About() {
     <Section id="about" aria-labelledby="about-title">
       <div className="grid gap-12 lg:grid-cols-[0.8fr_1.2fr] lg:gap-20">
         <div className="flex-1 flex-col items-center gap-5">
-
           <img
             src={about.image}
             alt="Profile picture"
@@ -17,7 +16,7 @@ export function About() {
           />
         </div>
         <div className="flex flex-col gap-5">
-                    <SectionIntro id="about-title" title={about.title} />
+          <SectionIntro id="about-title" title={about.title} />
 
           {about.paragraphs.map((paragraph) => (
             <Text

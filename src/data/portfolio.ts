@@ -9,12 +9,19 @@ export const profile = {
   location: "Accra, Ghana",
 };
 
-export const navItems = [
+export type NavItem = {
+  label: string;
+  href: string;
+  cta?: boolean;
+};
+
+export const navItems: NavItem[] = [
   { label: "Work", href: "#work" },
   { label: "Experience", href: "#experience" },
   { label: "Skills", href: "#expertise" },
   { label: "About", href: "#about" },
   { label: "Contact", href: "#contact" },
+  { label: "Download Resume", href: "/abmanaf_resume.pdf", cta: true },
 ];
 
 export const focus = {
@@ -76,7 +83,7 @@ export const projects: Project[] = [
     title: "A/B Testing Application",
     description:
       "Building an experimentation platform to compare different user experiences, track interactions and analyse conversion behaviour.",
-    stack: ["Next.js", "TypeScript", "Prisma", "PostgreSQL", "Clerk"],
+    stack: ["Next.js", "TypeScript", "Prisma", "PostgreSQL", "Clerk", "Neon"],
   },
 ];
 
@@ -94,21 +101,21 @@ export const experience: Experience[] = [
     role: "Frontend Developer",
     org: "ClearMed",
     place: "Accra, Ghana",
-    period: "August 2025 – Present",
+    period: "Aug 2025 - Feb 2026",
     intro:
-      "Contributing to the development and improvement of healthcare management applications.",
+      "Contributed to the development and improvement of healthcare management applications.",
     points: [
-      "Building responsive and reusable interfaces using React and TypeScript.",
-      "Migrating existing UI components from Flowbite to ShadCN UI.",
-      "Working with API integrations and application data.",
-      "Improving component architecture and user experience across healthcare workflows.",
+      "Built responsive and reusable interfaces using React and TypeScript.",
+      "Migrated existing UI components from Flowbite to ShadCN UI.",
+      "Worked with API integrations and application data.",
+      "Improved component architecture and user experience across healthcare workflows.",
     ],
   },
   {
     role: "Frontend Developer / National Service",
     org: "Amalitech",
     place: "Accra, Ghana",
-    period: "2024 – 2025",
+    period: "Oct 2024 – Oct 2025",
     intro: "Contributed to frontend development and content management projects.",
     points: [
       "Developed modern web interfaces using React and Next.js.",
@@ -174,6 +181,7 @@ export const growing = {
 
 export const about = {
   title: "About me",
+  image: "/portfolio.png",
   paragraphs: [
     "I am a software developer with an academic background in Mathematical Science, specializing in Statistics and Computer Science.",
     "My professional journey began in frontend development, where I developed an interest in building modern, interactive and user-friendly applications.",

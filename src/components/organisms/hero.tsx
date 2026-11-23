@@ -23,16 +23,16 @@ export function Hero() {
             <Text>{profile.intro2}</Text>
           </div>
           <div className="flex flex-wrap gap-3">
-            <Button asChild size="lg">
-              <a href="#work">
-                <ArrowDown aria-hidden />
-                View selected work
-              </a>
-            </Button>
             <Button asChild size="lg" variant="outline">
               <a href={`mailto:${contact.email}`}>
                 <Mail aria-hidden />
                 Email me
+              </a>
+            </Button>
+            <Button asChild size="lg" variant="default">
+              <a href="/abmanaf_resume.pdf" download>
+                <ArrowDown aria-hidden />
+                Download Resume
               </a>
             </Button>
           </div>

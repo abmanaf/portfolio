@@ -9,9 +9,9 @@ export function Logo({ className }: { className?: string }) {
         "font-display text-lg font-semibold tracking-[-0.02em] text-foreground",
         className,
       )}
-      aria-label="Abdulmanaf Aliu, back to top"
+      aria-label="abmanaf, back to top"
     >
-      Abdulmanaf Aliu
+      abmanaf
     </Link>
   );
 }
